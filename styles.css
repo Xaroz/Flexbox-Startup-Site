@@ -8,11 +8,15 @@
     box-sizing: border-box;
     
 }
+li{
+    list-style-type: none;
+}
 body{
     display: flex;
     justify-content: center;
     font-family: sans-serif;
-    color: white;
+    flex-direction: column;
+    color: black
 }
 nav{
     display: flex;
@@ -24,7 +28,6 @@ nav{
     justify-content: center;
 }
 .menu > li{
-    list-style-type: none;
     margin-right: 10px;
 }
 .logo{
@@ -47,7 +50,8 @@ nav{
 
     display: flex;
     flex-direction: column;
-    align-items: space
+    align-items: space;
+    color: white;
 }
 .button{
     font-size: 16px;
@@ -82,4 +86,96 @@ button:hover{
 }
 .description-container > h2{
     padding: 0 0 40px;
+}
+.title{
+    font-family: "Open Sans";
+}
+.pictures-container,
+.features-container,
+.reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 100px 50px;
+    text-align: center;
+    
+}
+.pictures-container > h2,
+.features-container > h2,
+.reviews > h2{
+    font-size: 32px;
+    font: normal;
+    margin-bottom: 35px;
+}
+.pictures-container > p,
+.features-container > p{
+    margin: 35px 20px;
+    line-height: 2em;   
+}
+hr{
+    border: 1px solid #2196F3;
+    background-color: #2196F3;
+    margin-bottom: 80px;
+    width: 150px;
+}
+.pictures{
+    width: 100%
+}
+.features-container{
+    background-color: #F7F7F7;
+}
+.subtitle{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.features-container p {
+    margin-bottom: 35px;
+    line-height: 2em;
+}
+.features-container li{
+    margin-bottom: 150px;
+    padding: 20px;
+    height: 250px;
+}
+.fa{
+    color: #78B5E2;
+    font-size: 350px;
+}
+.fa i{
+    font-size: 350px;
+}
+.grid i{
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 20px;
+}
+.features-container ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+  
+.features-container ul li{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex-basis: 70%;
+    height: 250px;
+}
+.quote {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #555555;
+    width: 80%;
+}
+  
+.author {
+    font-size: 16px;
+    margin-bottom: 50px;
+    color: #555555;
+    width: 80%;
 }
