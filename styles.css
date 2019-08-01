@@ -56,14 +56,17 @@ nav{
 .button{
     font-size: 16px;
     font-weight: bold;
+    text-transform: uppercase;
 
     color: #FFFFFF;
-    background-color: rgb(20, 126, 247);
+    background-color: #2196F3;
+    border: 4px solid #2196F3;
 
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
 
-    padding: 15px 50px;
+    padding: 16px 42px;
+    font-weight: 800;
     cursor: pointer;
     
     text-decoration: none;
@@ -92,7 +95,8 @@ button:hover{
 }
 .pictures-container,
 .features-container,
-.reviews{
+.reviews,
+.subscribe{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,9 +106,7 @@ button:hover{
     text-align: center;
     
 }
-.pictures-container > h2,
-.features-container > h2,
-.reviews > h2{
+.title{
     font-size: 32px;
     font: normal;
     margin-bottom: 35px;
@@ -123,7 +125,8 @@ hr{
 .pictures{
     width: 100%
 }
-.features-container{
+.features-container,
+.subscribe{
     background-color: #F7F7F7;
 }
 .subtitle{
@@ -164,6 +167,7 @@ hr{
     align-items: center;
     flex-basis: 70%;
     height: 250px;
+    color: #5F5555;
 }
 .quote {
     font-size: 20px;
@@ -172,10 +176,85 @@ hr{
     color: #555555;
     width: 80%;
 }
-  
 .author {
     font-size: 16px;
     margin-bottom: 50px;
     color: #555555;
     width: 80%;
+}
+.subscribe > p {
+    line-height: 2em;
+    padding-bottom: 30px;
+    color: #555555;
+}
+.subscribe > form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+.subscribe > form > input {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding: 10px;
+    
+}
+.subscribe-form input[type="email"]:invalid{
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;  
+}
+.subscribe-form > a{
+    align-self: center;
+}
+footer{
+    background-color: #414A4F;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+
+}
+.social-media i{
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+footer > p{
+    color: #B1B5B7;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+@media only screen and (min-width: 641px){
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 100px 0 100px;
+    }
+    .features-container ul {
+        flex-flow: row;
+    }
+      
+    .features-container ul li{
+        flex-flow: column;
+    }
+    .subscribe > form {
+        flex-direction: row;
+    }
+      
+    .subscribe > form > input {
+        font-size: 18px;
+        padding: 10px;
+        flex-basis: 550px; 
+        margin: 15px 30px 15px; 
+    }
 }
